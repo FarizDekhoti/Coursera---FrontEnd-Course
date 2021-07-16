@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    color: #000;
+    background-color:#fff;
+    font-family: 'Oxygen', sans-serif;
+}
+
+a {
+    text-decoration: none;  
+}
+
+/*Beginning of header*/
+
+#header-nav {
+    background-color: rgb(95, 83, 83);
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 30px;
+}
+
+#header-nav .container {
+    padding-top: 10px;
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand h1 {
+    font-family: 'Lora', serif;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #fff;
+    line-height: 0.75;
+}
+
+#nav-list a {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#nav-list .nav-item a:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 1s;
+}
+
+.navbar-toggler {
+    margin-bottom: 10px;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.main-title {
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.main-item {
+    background-color: rgb(95, 83, 83);
+    color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+#main-item-title {
+    font-weight: bold;
+}
+
+#chicken #main-item-title {
+    color: greenyellow;
+}
+#beef #main-item-title {
+    color:hotpink;
+}
+#sushi #main-item-title {
+    color:indigo;
+}
+
+.main-item  span {
+    display: block;
+}
+
+.main-item  span a {
+    text-decoration: underline;
+}
+
+
+
+
+/* large Devices */
+
+@media (min-width:1200px) {
+    #nav-list {
+        display: none;
+    }
+
+}
+
+/* medium devices */
+
+@media (min-width:992px) and (max-width:1199px) {
+    #nav-list {
+        display: none;
+    }
+}
+
+/* small devices */
+
+@media (min-width:768px) and (max-width:991px) {
+
+}
+
+/* extra - small devices */
+
+@media (max-width:767px) {
+    .navbar-brand h1 {
+        font-size: 4vw;
+    }
+
+    #nav-list a span {
+        font-size: 1.2em;
+    } 
+}
+
+/*Super extra small devices*/
+
+@media (max-width:479px) {
+    .navbar-brand h1 {
+        font-size: 20px;
+    }
+
+    #nav-list a span {
+        font-size: 1em;
+    } 
+}
+
+
